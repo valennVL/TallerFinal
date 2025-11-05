@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #0d0d0d;
+  color: white;
+}
+
+.auth-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.auth-container h2 {
+  color: #00bcd4;
+  margin-bottom: 20px;
+}
+
+.auth-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 250px;
+}
+
+.auth-container input {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+.auth-container button {
+  background-color: #00bcd4;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.auth-container button:hover {
+  background-color: #0097a7;
+}
+
+.auth-container p {
+  margin-top: 15px;
+}
+
+.dashboard header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: #1a1a1a;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.dashboard header h1 {
+  color: #00bcd4;
+}
+
+.dashboard header button {
+  background-color: #e74c3c;
+  border: none;
+  color: white;
+  padding: 8px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.dashboard header button:hover {
+  background-color: #c0392b;
+}
+
+
+.dashboard-container {
+  display: flex;
+  gap: 2rem; /* espacio entre columnas */
+}
+
+.dashboard-left {
+  flex: 1;
+}
+
+.dashboard-right {
+  flex: 2;
+  height: 90vh; /* para que el grafo ocupe más espacio */
+}

@@ -1,0 +1,214 @@
+.header {
+  display: flex;           /* Pone h1 y button en la misma fila */
+  align-items: center;     /* Centra verticalmente */
+  gap: 10px;               /* Espacio entre h1 y botón */
+  padding: 10px 20px;
+}
+
+.header h1 {
+  display: inline;         /* Evita que h1 ocupe toda la línea */
+  margin: 0;
+  font-size: 1.8rem;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  color: #00bcd4;
+}
+
+.header button {
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  background: #00bcd4;
+  color: #fff;
+  transition: background-color 0.2s;
+}
+
+.header button:hover {
+  background-color: #0056b3;
+}
+
+
+body {
+  background: #000;
+  font-family: 'Roboto', Arial, sans-serif;
+  margin: 0;
+  color: #fff;
+}
+
+.dashboard-container {
+  display: flex;
+  min-height: 100vh;
+  height: 100vh;
+  position: relative;
+}
+
+.sidebar {
+  width: 600px;
+  background: #111;
+  color: #fff;
+  padding: 2rem 1rem 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  overflow-y: auto;
+  max-height: 100vh;
+}
+
+/* header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+header h1 {
+  margin: 0 0 12px 0;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  color: #00bcd4;
+}
+
+header button {
+  margin-top: 6px;
+  background: #00bcd4;
+  color: #fff;
+} */
+
+.sections-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 0.5rem;
+}
+
+.sections-grid section {
+  margin-bottom: 0;
+}
+
+section {
+  margin-bottom: 1.7rem;
+  background: #181818;
+  border-radius: 10px;
+  box-shadow: 0 1px 8px #00bcd422;
+  padding: 1rem;
+}
+section h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.15rem;
+  color: #00bcd4;
+  font-weight: 700;
+}
+
+input, button {
+  margin: 6px 3px 8px 0;
+  padding: 10px 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none;
+}
+input {
+  background: #111;
+  color: #fff;
+  border: 1px solid #222;
+  transition: border .2s;
+}
+input:focus {
+  border: 1.5px solid #00bcd4;
+}
+
+button {
+  background: #00bcd4;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.2s, filter 0.2s;
+  font-weight: 500;
+}
+button:hover {
+  background: #0097a7;
+  filter: brightness(1.12);
+}
+
+ul {
+  padding-left: 18px;
+}
+li {
+  margin-bottom: 7px;
+}
+li button {
+  margin-left: 12px;
+  background: #00bcd4;
+  color: #fff;
+  font-size: 0.93rem;
+  padding: 6px 14px;
+}
+li button:hover {
+  background: #0097a7;
+}
+
+table {
+  margin-top: 12px;
+  width: 100%;
+  border-collapse: collapse;
+}
+th, td {
+  border: 1px solid #222;
+  padding: 5px 7px;
+  text-align: center;
+}
+th {
+  background: #222;
+  color: #00bcd4;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 900px) {
+  .dashboard-container {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+    box-shadow: none;
+    border-bottom: 2px solid #222;
+    border-radius: 0;
+  }
+}
+
+.panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  user-select: none;
+}
+
+.panel-header h2 {
+  margin: 0;
+}
+
+.panel-header span {
+  color: #00bcd4;
+  font-size: 1.2rem;
+}
+
+.panel-body {
+  margin-top: 0.75rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.panel.collapsed {
+  padding-bottom: 0.6rem;
+}
+
+
+#View {
+  width: 70%;           /* Menor que todo el contenedor */
+  height: 200px;        /* Altura más pequeña */
+  margin: 20px auto;    /* Centra horizontalmente */
+  border: 1px solid hsl(0, 0%, 100%);
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #f9f9f9;
+}
