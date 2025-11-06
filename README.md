@@ -10,7 +10,6 @@ PathFinder es un MVP que permite:
 - Consumir la API desde un frontend React protegido con sesión (token).
 
 
-
 ## Requisitos
 
 - Python 3.11+
@@ -19,15 +18,15 @@ PathFinder es un MVP que permite:
 - jq (opcional, para pruebas con curl)
 
 
+## Variables de entorno (.env)
 
-## Variables de entorno
-
-```env
+```bash
 JWT_SECRET=CLAVEGRUPO5
 ALGORITHM=HS256
 ACCESS_TOKEN_EXPIRES_MINUTES=60
 SQLITE_URL=sqlite:///app.db
 CORS_ORIGINS=http://localhost:5173
+```
 
 ## Backend — FastAPI + SQLite
 
@@ -43,8 +42,6 @@ source backend/.venv/bin/activate
 pip install -r backend/requirements.txt
 ```
 
-```
-
 ### 4. Cargar dataset inicial
 
 ```bash
@@ -52,6 +49,8 @@ python -m backend.scripts.load_seed
 ```
 
 > Esto poblará la base de datos a partir de `nodes.csv` y `edges.csv`.
+
+
 ### 5. Ejecutar servidor
 
 ```bash
