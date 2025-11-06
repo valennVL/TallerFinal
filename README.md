@@ -143,7 +143,9 @@ curl -H "Authorization: Bearer $TOKEN" "http://localhost:8000/graph/shortest-pat
 ### Video demo
 [Demo API web](https://www.youtube.com/watch?v=SX_t4n9__Xc)
 
-Decisiones técnicas
+---
+
+**Decisiones técnicas**
 
 Backend protegido con JWT y contraseña hasheada con `bcrypt`.
 Base de datos SQLite por simplicidad para MVP.
@@ -151,14 +153,13 @@ Grafo implementado con nodos/aristas y algoritmos BFS y Dijkstra.
 Frontend React con Vite y visualización de grafos usando `react-force-graph`.
 Uso de `.env` para configuraciones sensibles.
 
-
-Limitaciones
+**Limitaciones**
 
  No se soporta multiusuario simultáneo avanzado (SQLite tiene limitaciones de concurrencia).
  Interfaz gráfica básica, enfocada en funcionalidad.
  No se incluyen pruebas automatizadas (opcional para extensión).
 
- Mejoras posibles
+ **Mejoras posibles**
 
  Integrar exportación del árbol BFS a JSON/CSV.
  Agregar tests unitarios y de integración.
